@@ -128,3 +128,25 @@ body {
     background-position: 0% 50%;
   }
 }
+
+/* 
+
+--Sensor Dashboard--
+
+*/
+
+.dashboard-gradient {
+  background: var(--gradient-pattern);
+  background-size: 200% 200%;
+  background-clip: text;
+  color: transparent;
+  animation: animate-gradient 8s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --Canvas-- */
+.card h5 {
+  color: #e560dc;
+}
+/* --Canvas End-- */

@@ -37,16 +37,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item mx-2">
-              <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a>
+              <a class="nav-link active" aria-current="page" href="#"> <i class="fas fa-home"></i> Home</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> About Us</a>
+              <a class="nav-link" href="#"> <i class="fas fa-info-circle"></i> About Us</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#"><i class="fab fa-github"></i> GitHub</a>
+              <a class="nav-link" href="#"> <i class="fab fa-github"></i> GitHub</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#"><i class="fas fa-database"></i> Database</a>
+              <a class="nav-link" href="#"> <i class="fas fa-database"></i> Database</a>
             </li>
           </ul>
         </div>
@@ -70,9 +70,9 @@
 
       <!-- Hero Start -->
       <div class="hero-container">
-        <h1 class="display-3 fw-bold hero-gradient">Smart Sensors for Healthy Plants</h1>
+        <h1 class="display-3 fw-bold dashboard-gradient">Smart Sensors for Healthy Plants</h1>
         <div class="fw-bold mt-4 gradient-text-wrapper">
-          IoT Technology <span class="dot">•</span> Real Time Monitoring<br />
+          IoT Technology<span class="dot">•</span>Real Time Monitoring<br />
           Environmental Intelligence
         </div>
         <!-- Balloon Start -->
@@ -92,7 +92,83 @@
     </section>
     <!-- Header Section End -->
 
+    <!-- Dashboard Section -->
+    <section class="container py-5 text-center">
+      <h1 class="display-4 fw-bold mb-5 hero-gradient">Dashboard</h1>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Graph 1 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 h-100">
+            <h5 class="fw-semibold mb-3">Air Temperature</h5>
+            <canvas id="airTemperatureChart" height="150"></canvas>
+          </div>
+        </div>
+
+        <!-- Graph 2 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 h-100">
+            <h5 class="fw-semibold mb-3">Air Humidity</h5>
+            <canvas id="airTemperatureChart" height="150"></canvas>
+          </div>
+        </div>
+
+        <!-- Graph 3 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 h-100">
+            <h5 class="fw-semibold mb-3">Soil Temperature</h5>
+            <canvas id="soilTemperatureChart" height="150"></canvas>
+          </div>
+        </div>
+
+        <!-- Graph 4 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 h-100">
+            <h5 class="fw-semibold mb-3">Soil Moisture</h5>
+            <canvas id="soilMoistureChart" height="150"></canvas>
+          </div>
+        </div>
+
+        <!-- Graph 5 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 h-100">
+            <h5 class="fw-semibold mb-3">Soil pH</h5>
+            <canvas id="soilPHChart" height="150"></canvas>
+          </div>
+        </div>
+
+        <!-- Graph 6 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 h-100">
+            <h5 class="fw-semibold mb-3">Rainfall per 5-Mins</h5>
+            <canvas id="soilRainfallPerFiveMinsChart" height="150"></canvas>
+          </div>
+        </div>
+
+        <!-- Graph 7 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 h-100">
+            <h5 class="fw-semibold mb-3">Rainfall per Hour</h5>
+            <canvas id="soilRainfallPerHourChart" height="150"></canvas>
+          </div>
+        </div>
+
+        <!-- Graph 8 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm p-3 h-100">
+            <h5 class="fw-semibold mb-3">Rainfall per Day</h5>
+            <canvas id="soilRainfallPerDayChart" height="150"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Dashboard Section End -->
+
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Chart JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
   </body>
 </html>
