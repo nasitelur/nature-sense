@@ -1,0 +1,130 @@
+:root {
+  --gradient-pattern: linear-gradient(-45deg, #5d13e690, #e560dc, #ef5f5f, #d840b6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* --Navbar-- */
+.navbar {
+  padding: 1rem !important;
+}
+
+.navbar-gradient {
+  background: var(--gradient-pattern);
+  background-size: 400% 400%;
+  animation: animate-gradient 8s ease infinite;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e0f2f1 !important;
+  text-shadow: 0 0 5px #e0f2f1, 0 0 10px #e0f2f1;
+}
+/* --Navbar End-- */
+
+/* --Wave-- */
+.wave-bg {
+  position: relative;
+  height: 90vh;
+}
+
+.wave-svg-wrapper {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+}
+
+.wave-svg-wrapper svg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+}
+/* --Wave End-- */
+
+/* --Hero-- */
+.hero-container {
+  position: relative;
+  z-index: 1;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-gradient {
+  background: var(--gradient-pattern);
+  background-size: 400% 400%;
+  background-clip: text;
+  color: transparent;
+  animation: animate-gradient 8s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-wrapper {
+  font-size: 1.3rem;
+  background: var(--gradient-pattern);
+  background-size: 130% 130%;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dot {
+  font-size: 1.4rem;
+  padding: 0 0.8rem;
+}
+/* --Hero End-- */
+
+/* --Balloon-- */
+.balloon-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+.balloon-box {
+  background: #f9f9f9;
+  color: #e560dc;
+  box-shadow: 0 2px 8px rgba(93, 19, 230, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.balloon-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(93, 19, 230, 0.15);
+}
+/* --Balloon End-- */
+
+@keyframes animate-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
