@@ -145,8 +145,49 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* --Canvas-- */
+/* --Divider-- */
+.divider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.divider-line {
+  height: 2px;
+  width: 175px;
+  background: #e560dc;
+}
+
+.line-left {
+  mask-image: linear-gradient(to right, transparent, #d840b6);
+}
+
+.line-right {
+  mask-image: linear-gradient(to left, transparent, #d840b6);
+}
+
+.divider-text {
+  margin: 0 1.5rem;
+  color: #d840b6;
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+}
+/* --Divider End-- */
+
+/* --Card-- */
+.metrics-title {
+  color: #e560dc;
+}
+
 .card h5 {
   color: #e560dc;
 }
-/* --Canvas End-- */
+
+.chart-wrapper {
+  position: relative;
+  height: 260px !important;
+  width: 100%;
+  overflow: hidden;
+}
+/* --Card End-- */

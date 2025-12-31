@@ -72,7 +72,7 @@
       <div class="hero-container">
         <h1 class="display-3 fw-bold dashboard-gradient">Smart Sensors for Healthy Plants</h1>
         <div class="fw-bold mt-4 gradient-text-wrapper">
-          IoT Technology<span class="dot">•</span>Real Time Monitoring<br />
+          IoT Technology<span class="dot">•</span>Real-Time Monitoring<br />
           Environmental Intelligence
         </div>
         <!-- Balloon Start -->
@@ -94,73 +94,101 @@
 
     <!-- Dashboard Section -->
     <section class="container py-5 text-center">
-      <h1 class="display-4 fw-bold mb-5 hero-gradient">Dashboard</h1>
+      <h1 class="display-5 fw-bold mb-2 dashboard-gradient">Dashboard</h1>
 
-      <div class="row g-4 justify-content-center">
-        <!-- Graph 1 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm p-3 h-100">
-            <h5 class="fw-semibold mb-3">Air Temperature</h5>
-            <canvas id="airTemperatureChart" height="150"></canvas>
+      <!-- Subtitle -->
+      <div class="divider-container">
+        <div class="divider-line line-left"></div>
+        <div class="divider-text">Time-Series Data</div>
+        <div class="divider-line line-right"></div>
+      </div>
+      <!-- Subtitle End -->
+
+      <!-- Air Metrics -->
+      <div class="mb-5">
+        <h3 class="fw-bold mb-4 metrics-title">Air Parameters</h3>
+
+        <!-- Chart -->
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 h-100">
+              <h5 class="fw-semibold mb-3">Air Temperature</h5>
+              <div class="chart-wrapper">
+                <canvas id="airTemperatureChart"></canvas>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <!-- Graph 2 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm p-3 h-100">
-            <h5 class="fw-semibold mb-3">Air Humidity</h5>
-            <canvas id="airHumidityChart" height="150"></canvas>
-          </div>
-        </div>
-
-        <!-- Graph 3 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm p-3 h-100">
-            <h5 class="fw-semibold mb-3">Soil Temperature</h5>
-            <canvas id="soilTemperatureChart" height="150"></canvas>
-          </div>
-        </div>
-
-        <!-- Graph 4 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm p-3 h-100">
-            <h5 class="fw-semibold mb-3">Soil Moisture</h5>
-            <canvas id="soilMoistureChart" height="150"></canvas>
-          </div>
-        </div>
-
-        <!-- Graph 5 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm p-3 h-100">
-            <h5 class="fw-semibold mb-3">Soil pH</h5>
-            <canvas id="soilPHChart" height="150"></canvas>
-          </div>
-        </div>
-
-        <!-- Graph 6 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm p-3 h-100">
-            <h5 class="fw-semibold mb-3">Rainfall per 5-Mins</h5>
-            <canvas id="soilRainfallPerFiveMinsChart" height="150"></canvas>
-          </div>
-        </div>
-
-        <!-- Graph 7 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm p-3 h-100">
-            <h5 class="fw-semibold mb-3">Rainfall per Hour</h5>
-            <canvas id="soilRainfallPerHourChart" height="150"></canvas>
-          </div>
-        </div>
-
-        <!-- Graph 8 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm p-3 h-100">
-            <h5 class="fw-semibold mb-3">Rainfall per Day</h5>
-            <canvas id="soilRainfallPerDayChart" height="150"></canvas>
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 h-100">
+              <h5 class="fw-semibold mb-3">Air Humidity</h5>
+              <div class="chart-wrapper">
+                <canvas id="airHumidityChart"></canvas>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!-- Air Metrics End -->
+
+      <!-- Soil Metrics -->
+      <div class="mb-5">
+        <h3 class="fw-bold mb-4 metrics-title">Soil Parameters</h3>
+
+        <!-- Chart -->
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 h-100">
+              <h5 class="fw-semibold mb-3">Soil Temperature</h5>
+              <div class="chart-wrapper">
+                <canvas id="soilTemperatureChart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 h-100">
+              <h5 class="fw-semibold mb-3">Soil Moisture</h5>
+              <div class="chart-wrapper">
+                <canvas id="soilMoistureChart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 h-100">
+              <h5 class="fw-semibold mb-3">Soil pH</h5>
+              <div class="chart-wrapper">
+                <canvas id="soilPHChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Soil Metrics End -->
+
+      <!-- Rainfall Metrics -->
+      <div class="mb-5">
+        <h3 class="fw-bold mb-4 metrics-title">Rainfall Statistics</h3>
+
+        <!-- Chart -->
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 h-100">
+              <h5 class="fw-semibold mb-3">Rainfall per 5-Mins</h5>
+              <div class="chart-wrapper">
+                <canvas id="soilRainfallPerFiveMinsChart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 h-100">
+              <h5 class="fw-semibold mb-3">Rainfall per Hour</h5>
+              <div class="chart-wrapper">
+                <canvas id="soilRainfallPerHourChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Rainfall Metrics End -->
     </section>
     <!-- Dashboard Section End -->
 
